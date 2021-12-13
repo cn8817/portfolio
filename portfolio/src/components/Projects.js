@@ -9,6 +9,7 @@ export default function Projects() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [isModalVisible2, setIsModalVisible2] = useState(false);
     const [isModalVisible3, setIsModalVisible3] = useState(false);
+    const [isModalVisible4, setIsModalVisible4] = useState(false);
 
     const showModal = () => {
         setIsModalVisible(true);
@@ -18,6 +19,9 @@ export default function Projects() {
     };
     const showModal3 = () => {
         setIsModalVisible3(true);
+    };
+    const showModal4 = () => {
+        setIsModalVisible4(true);
     };
 
     const handleOk = () => {
@@ -29,6 +33,9 @@ export default function Projects() {
     const handleOk3 = () => {
         setIsModalVisible3(false);
     };
+    const handleOk4 = () => {
+        setIsModalVisible4(false);
+    };
 
     const handleCancel = () => {
         setIsModalVisible(false);
@@ -38,6 +45,9 @@ export default function Projects() {
     };
     const handleCancel3 = () => {
         setIsModalVisible3(false);
+    };
+    const handleCancel4 = () => {
+        setIsModalVisible4(false);
     };
 
     return(
@@ -124,10 +134,10 @@ export default function Projects() {
                     <div className="project-info">
                         <div><h3>Studio Ghibli Films</h3></div>
                         <div className="project-btn">
-                        <Button type="primary" onClick={showModal2}>
+                        <Button type="primary" onClick={showModal4}>
                             More Details
                         </Button>
-                        <Modal title='Studio Ghibli Films' visible={isModalVisible2} onOk={handleOk2} onCancel={handleCancel2}>
+                        <Modal title='Studio Ghibli Films' visible={isModalVisible4} onOk={handleOk4} onCancel={handleCancel4}>
                             <p>Description: A website to view and find information about Studio Ghibli Films.</p>
                             <p>Frontend:</p>
                             <ul>

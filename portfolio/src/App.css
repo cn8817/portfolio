@@ -69,6 +69,10 @@ html{
   background-color: #c6bbb9;
 }
 
+.left-h1{
+  padding-top: 0.5rem;
+}
+
 .link{
   padding:1rem;
   color:#7a748c;
@@ -93,6 +97,10 @@ html{
   border: 0.1rem solid #ffffff;
 }
 
+.hamburger{
+  display: none;
+}
+
 /*Project*/
 .project-wrap{
   display: flex;
@@ -112,8 +120,10 @@ html{
   border-radius: 5rem;
   width: 32%;
   height: 70vh;
-  padding-left:5rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:1rem 0 1rem 0;
 }
 
 
@@ -125,12 +135,12 @@ html{
 .project-info{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 3rem;
 }
 
 .project-btn{
-  margin-right: 4rem;
+  margin:0 0 0 1rem;
 }
 
 .ant-btn{
@@ -148,8 +158,10 @@ html{
 
 .about-container{
   height: 100%;
-  width: 70%;
-  margin: 3rem 0 0 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 10rem 0 10rem;
 }
 
 .about-intro{
@@ -185,4 +197,54 @@ html{
 
 .contact-extra{
   margin-top:10rem;
+}
+
+/*Responsive*/
+@media screen and (max-width:1300px){
+  .ant-image{
+    width:15rem
+  }
+  .project-card{
+    height: 65vh;
+  }
+  .project-info{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .project-card{
+    width: 20rem;
+    height: 60vh;
+  }
+  .nav-menu{
+    display:none;
+    width: 100%;
+    height:15rem;
+    position: absolute;
+    top:4rem;
+    background-color: #c6bbb9;
+    z-index: 1;
+  }
+  .nav-menu.active{
+    display:flex;
+    flex-direction: column;
+    left: 0;
+  }
+  .hamburger{
+    display: block;
+  }
+}
+
+@media screen and (max-width:700px){
+  .project-card{
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width:400px){
+  .project-card{
+    width: 18rem;
+    height: 70vh;
+  }
 }
