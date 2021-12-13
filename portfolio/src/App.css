@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+html{
+  margin:0;
+  padding:0;
+}
+
+* { 
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #21242b;
+}
+
+/*Landing Page*/
+
+.landing-bg{
+  width: 100%;
+  height:100vh;
+  background-image: url('https://images.unsplash.com/photo-1637963953070-e0f3d08da3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+}
+
+.landing-words{
+  color:#ffffff;
+  font-size: 2rem;
+}
+
+.landing-container{
+  margin-left:50%;
+  padding-top: 10%;
+}
+
+.landing-btn{
+  padding:1% 5% 1% 5%;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 10%;
+  transition: 0.3s;
+}
+
+.landing-btn:hover{
+  background-color: #282c34;
+  color: #7a748c;
+}
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 10px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+/*Navbar*/
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  background-color: #c6bbb9;
+}
+
+.link{
+  padding:1rem;
+  color:#7a748c;
+}
+
+.link:hover{
+  color: #ffffff;
+}
+
+.left-h1{
+  color: #7a748c;
+}
+
+.download{
+  border: 0.1rem solid #7a748c;
+  border-radius: 20rem;
+  padding:0.5rem;
+
+}
+
+.download:hover{
+  border: 0.1rem solid #ffffff;
+}
+
+/*Project*/
+.project-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-h1{
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.project-card{
+  background-color:  white;
+  border-radius: 5rem;
+  width: 32%;
+  height: 70vh;
+  padding-left:5rem;
+}
+
+/* .project-image{
+  object-fit: contain;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 50vh;
+} */
+
+.ant-image{
+  width:20rem;
+  margin-top: 2rem;
+}
+
+.project-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.project-btn{
+  margin-right: 4rem;
+}
+
+.ant-btn{
+  background-color: #282c34 !important;
+  border:none !important;
+  color: #ffffff !important;
+}
