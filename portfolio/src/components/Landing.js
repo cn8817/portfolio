@@ -5,7 +5,7 @@ export default function Landing() {
   const { push } = useHistory();
 
   const onClick = () => {
-    push('/projects')
+    push('/about')
   }
   return (
     <div className='landing-bg'>

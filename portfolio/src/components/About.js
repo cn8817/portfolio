@@ -1,22 +1,33 @@
 import React from "react";
+import { Rate } from 'antd'
 
 export default function About(){
     return(
-        <div>
-            <h1>About</h1>
+        <div className="about-container">
+            <div className="about-intro">
+                <h1 className="about-h1">Hi, I'm Christine Nguyen</h1>
+                <h2 className="about-h2">I'm Full Stack Web Developer based in Las Vegas, NV. I'm passionate about frontend developement and thrive off creating reponsive, user friendly, and efficient applications</h2>
+            </div>
+            <div className="about-skills">
             <div>
-                <h2>Christine Nguyen</h2>
+                <h3 className="about-h3">Frontend</h3>
+                <p>HTML<Rate disabled allowHalf defaultValue={3.5} /></p>
+                <p>CSS <Rate disabled allowHalf defaultValue={3.5} /></p>
+                <p>JavaScript <Rate disabled allowHalf defaultValue={3.5} /></p>
+                <p>React <Rate disabled allowHalf defaultValue={4} /></p>
+                <p>Redux <Rate disabled allowHalf defaultValue={3.5} /></p>
+                <p>Jest <Rate disabled allowHalf defaultValue={3.5} /></p>
             </div>
             <div>
-                <h3>Skills</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>React</p>
-                <p>Node</p>
+                <h3 className="about-h3">Backend</h3>
+                <p>Node <Rate disabled allowHalf defaultValue={2.5} /></p>
+                <p>Express <Rate disabled allowHalf defaultValue={2.5} /></p>
+                <p>SQL <Rate disabled allowHalf defaultValue={2} /></p>
+                <p>Python <Rate disabled allowHalf defaultValue={2.5} /></p>
+                <p>Heroku <Rate disabled allowHalf defaultValue={2.5} /></p>
             </div>
-            <h3>Description</h3>
-            <p>Full Stack Web Developer </p>
+            </div>
+            <div><p>Learn more by downloading my Resume!</p></div>
         </div>
     )
 }

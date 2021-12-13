@@ -11,7 +11,7 @@ html{
 
 .App {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #21242b;
 }
 
@@ -98,12 +98,13 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .project-h1{
   color: #ffffff;
   text-align: center;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 .project-card{
@@ -112,14 +113,9 @@ html{
   width: 32%;
   height: 70vh;
   padding-left:5rem;
+  margin-top: 2rem;
 }
 
-/* .project-image{
-  object-fit: contain;
-  margin-top: 2rem;
-  width: 10rem;
-  height: 50vh;
-} */
 
 .ant-image{
   width:20rem;
@@ -141,4 +137,37 @@ html{
   background-color: #282c34 !important;
   border:none !important;
   color: #ffffff !important;
+}
+
+/*About*/
+
+.about-container, .about-h3, .about-h2, .about-h1{
+  color:#ffffff;
+  text-align: center;
+}
+
+.about-container{
+  height: 100vh;
+}
+
+.about-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*Contact*/
+.contact-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.contact-h1, .contact-a, .contact-p{
+  color: #ffffff !important;
+}
+
+.contact-extra{
+  margin-top:10rem;
 }

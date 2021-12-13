@@ -3,6 +3,7 @@ import { Modal, Button, Image } from 'antd';
 import "antd/dist/antd.css";
 import Potluck from '../Assets/Potluck.png'
 import Market from '../Assets/Market.png'
+import Ghibli from '../Assets/ghibli.png'
 
 export default function Projects() {
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -110,7 +111,31 @@ export default function Projects() {
                                 <li>Participated in Stakeholder meetings to present progress and receive feedback</li>
                                 <li>Implemented Redux as a state management system</li>
                             </ul>
-                            <p><a target="_blank" rel="noopener noreferrer" href="https://african-marketplace-project.vercel.app/">Website</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/Build-Week-African-Marketplace-02/front-end">Github</a></p>
+                            <p>No available website at the moment, <a target="_blank" rel="noopener noreferrer" href="https://github.com/BloomTech-Labs/coder-heroes-fe">Github</a></p>
+                        </Modal>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project-card">
+                    <div className="two">
+                    <Image className='project-image' src={Ghibli}/>
+                    </div>
+                    <div className="project-info">
+                        <div><h3>Studio Ghibli Films</h3></div>
+                        <div className="project-btn">
+                        <Button type="primary" onClick={showModal2}>
+                            More Details
+                        </Button>
+                        <Modal title='Studio Ghibli Films' visible={isModalVisible2} onOk={handleOk2} onCancel={handleCancel2}>
+                            <p>Description: A website to view and find information about Studio Ghibli Films.</p>
+                            <p>Frontend:</p>
+                            <ul>
+                                <li>Retrieved data from the Ghibli API and implemented it into the application</li>
+                                <li>Gave each film an information page and matched it with their ID</li>
+                                <li>Made the application fully responsive to any screen size</li>
+                            </ul>
+                            <p>No available website at the moment, <a target="_blank" rel="noopener noreferrer" href="https://github.com/cn8817/api-practice">Github</a></p>
                         </Modal>
                         </div>
                     </div>

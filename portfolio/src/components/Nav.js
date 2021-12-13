@@ -11,10 +11,10 @@ export default function Nav(){
             </div>
 
             <div className='right'>
-                <Link className='link' to='/'>Home</Link>
+                <Link className='link' to='/about'>About</Link>
                 <Link className='link' to ='/projects'>Projects</Link>
-                <Link className='link' to ='/about'>About</Link> 
-                <a className='link download' href='resume.pdf' download>Download CV</a>
+                <Link className='link' to ='/contact'>Contact</Link> 
+                <a className='link download' href='resume.pdf' download>Download Resume</a>
             </div>
         </div>
     )

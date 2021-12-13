@@ -5,6 +5,7 @@ import Landing from './components/Landing'
 import Nav from './components/Nav'
 import Projects from './components/Projects'
 import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Route exact path='/' component={Landing}/>
         <div>
           <Nav/>
-          <Route exact path='/projects' component={Projects}/>
           <Route exact path='/about' component={About}/>
+          <Route exact path='/projects' component={Projects}/>
+          <Route exact path='/contact' component={Contact}/>
         </div>
       </Switch>
     </div>
