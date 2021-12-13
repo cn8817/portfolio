@@ -141,19 +141,34 @@ html{
 
 /*About*/
 
-.about-container, .about-h3, .about-h2, .about-h1{
+.about-container, .about-h3, .about-h2, .about-h1, .special-h3{
   color:#ffffff;
   text-align: center;
 }
 
 .about-container{
-  height: 100vh;
+  height: 100%;
+  width: 70%;
+  margin: 3rem 0 0 15rem;
+}
+
+.about-intro{
+  padding-bottom: 5rem;
 }
 
 .about-skills{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.about-learn{
+  padding-top: 1rem;
+}
+
+.special{
+  margin-top: 10rem;
+  padding-bottom: 2rem;
 }
 /*Contact*/
 .contact-container{

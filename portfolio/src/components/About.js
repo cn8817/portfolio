@@ -1,5 +1,6 @@
 import React from "react";
-import { Rate } from 'antd'
+import { Rate, Image } from 'antd'
+import Cats from '../Assets/cats.png'
 
 export default function About(){
     return(
@@ -27,7 +28,14 @@ export default function About(){
                 <p>Heroku <Rate disabled allowHalf defaultValue={2.5} /></p>
             </div>
             </div>
-            <div><p>Learn more by downloading my Resume!</p></div>
+            <div className="about-learn"><p>Learn more by downloading my Resume!</p></div>
+            <div className="special">
+                <h3 className="special-h3">Special thanks to my cats for always stepping on my laptop when I'm coding:</h3>
+                <div className='cats'>
+                    <Image src={Cats}/>
+                    <p>Carrot & Potato</p>
+                </div>
+            </div>
         </div>
     )
 }

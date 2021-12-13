@@ -10,15 +10,6 @@ export default function Contact() {
                 <p className='contact-p'>LinkedIn: <a className='contact-a' target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/christine8817/">Christine8817</a></p>
             </div>
             <div className='contact-extra'><p className='contact-p'>(contact form in the process of making!)</p></div>
-            <div>
-                <h3>Special Thanks to:</h3>
-                <div className='potato'>
-                    <Image src=''/>
-                </div>
-                <div className='carrot'>
-                    <Image src=''/>
-                </div>
-            </div>
         </div>
     )
 }
