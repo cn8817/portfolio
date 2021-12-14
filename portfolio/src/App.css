@@ -240,6 +240,17 @@ html{
   .project-card{
     height: 60vh;
   }
+  .about-container{
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .landing-container{
+    padding-top: 10rem;
+    margin-left: 2rem;
+  }
+  .landing-words{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:400px){
