@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bb6730e6.chunk.css",
+    "main.js": "/static/js/main.1a0fd255.chunk.js",
+    "main.js.map": "/static/js/main.1a0fd255.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/css/2.2b8316e7.chunk.css": "/static/css/2.2b8316e7.chunk.css",
+    "static/js/2.89abf00c.chunk.js": "/static/js/2.89abf00c.chunk.js",
+    "static/js/2.89abf00c.chunk.js.map": "/static/js/2.89abf00c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2b8316e7.chunk.css.map": "/static/css/2.2b8316e7.chunk.css.map",
+    "static/css/main.bb6730e6.chunk.css.map": "/static/css/main.bb6730e6.chunk.css.map",
+    "static/js/2.89abf00c.chunk.js.LICENSE.txt": "/static/js/2.89abf00c.chunk.js.LICENSE.txt",
+    "static/media/Market.b62719d8.png": "/static/media/Market.b62719d8.png",
+    "static/media/Potluck.bcf97478.png": "/static/media/Potluck.bcf97478.png",
+    "static/media/cats.8c046df6.png": "/static/media/cats.8c046df6.png",
+    "static/media/ghibli.61790283.png": "/static/media/ghibli.61790283.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0605945.js",
+    "static/css/2.2b8316e7.chunk.css",
+    "static/js/2.89abf00c.chunk.js",
+    "static/css/main.bb6730e6.chunk.css",
+    "static/js/main.1a0fd255.chunk.js"
+  ]
+}
