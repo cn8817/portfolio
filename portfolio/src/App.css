@@ -238,7 +238,7 @@ html{
 
 @media screen and (max-width:700px){
   .project-card{
-    height: 60vh;
+    height: 55vh;
   }
   .about-container{
     width: 90%;
@@ -251,11 +251,19 @@ html{
   .landing-words{
     font-size: 20px;
   }
+  .landing-btn{
+    background-color: #ffffff;
+    border: none;
+  }
+  .landing-btn:hover{
+    background-color: #ffffff;
+    border: none;
+  }
 }
 
 @media screen and (max-width:400px){
   .project-card{
     width: 18rem;
-    height: 70vh;
+    height: 50vh;
   }
 }
