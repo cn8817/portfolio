@@ -7,7 +7,7 @@ export default function About(){
         <div className="about-container">
             <div className="about-intro">
                 <h1 className="about-h1">Hi, I'm Christine Nguyen</h1>
-                <h2 className="about-h2">I'm Full Stack Web Developer based in Las Vegas, NV. I'm passionate about frontend developement and thrive off creating responsive, user-friendly, and efficient applications</h2>
+                <h2 className="about-h2">I'm a Full Stack Web Developer based in Las Vegas, NV. Frontend Developement is my specialty and creating responsive, user-friendly, and efficient applications is my passion!</h2>
             </div>
             <div className="about-skills">
             <div>
