@@ -15,9 +15,9 @@ export default function Nav(){
             </div>
 
             <div className={click ? 'nav-menu active' : 'nav-menu'}>
-                <Link className='link' to='/about'>About</Link>
-                <Link className='link' to ='/projects'>Projects</Link>
-                <Link className='link' to ='/contact'>Contact</Link> 
+                <a href="#about" className='link' >About</a>
+                <a href="#projects" className='link'>Projects</a>
+                <a href="#contact" className='link'>Contact</a>
                 <a className='link download' href='resume.pdf' download>Download Resume</a>
             </div>
                 <div className='hamburger' onClick={handleClick}>

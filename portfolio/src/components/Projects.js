@@ -4,12 +4,14 @@ import "antd/dist/antd.css";
 import Potluck from '../Assets/Potluck.png'
 import Market from '../Assets/Market.png'
 import Ghibli from '../Assets/ghibli.png'
+import ecom from '../Assets/ecom.png'
 
 export default function Projects() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [isModalVisible2, setIsModalVisible2] = useState(false);
     const [isModalVisible3, setIsModalVisible3] = useState(false);
     const [isModalVisible4, setIsModalVisible4] = useState(false);
+    const [isModalVisible5, setIsModalVisible5] = useState(false);
 
     const showModal = () => {
         setIsModalVisible(true);
@@ -22,6 +24,9 @@ export default function Projects() {
     };
     const showModal4 = () => {
         setIsModalVisible4(true);
+    };
+    const showModal5 = () => {
+        setIsModalVisible5(true);
     };
 
     const handleOk = () => {
@@ -36,6 +41,9 @@ export default function Projects() {
     const handleOk4 = () => {
         setIsModalVisible4(false);
     };
+    const handleOk5 = () => {
+        setIsModalVisible5(false);
+    };
 
     const handleCancel = () => {
         setIsModalVisible(false);
@@ -49,11 +57,38 @@ export default function Projects() {
     const handleCancel4 = () => {
         setIsModalVisible4(false);
     };
+    const handleCancel5 = () => {
+        setIsModalVisible5(false);
+    };
 
     return(
-        <div className="project-container">
+        <div className="project-container" id='projects'>
             <h1 className="project-h1">Projects</h1>
             <div className="project-wrap">
+
+            <div className="project-card">
+                    <div className="two">
+                    <Image className='project-image' src={Ghibli}/>
+                    </div>
+                    <div className="project-info">
+                        <div><h3>Studio Ghibli Films</h3></div>
+                        <div className="project-btn">
+                        <Button type="primary" onClick={showModal4}>
+                            More Details
+                        </Button>
+                        <Modal title='Studio Ghibli Films' visible={isModalVisible4} onOk={handleOk4} onCancel={handleCancel4}>
+                            <p>Description: A website to view and find information about Studio Ghibli Films.</p>
+                            <p>Frontend:</p>
+                            <ul>
+                                <li>Retrieved data from the Ghibli API and implemented it into the application</li>
+                                <li>Gave each film an information page and matched it with their ID</li>
+                                <li>Made the application fully responsive to any screen size</li>
+                            </ul>
+                            <p>No available website at the moment, <a target="_blank" rel="noopener noreferrer" href="https://github.com/cn8817/api-practice">Github</a></p>
+                        </Modal>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="project-card">
                     <div className="one">
@@ -129,23 +164,23 @@ export default function Projects() {
 
                 <div className="project-card">
                     <div className="two">
-                    <Image className='project-image' src={Ghibli}/>
+                    <Image className='project-image' src={ecom}/>
                     </div>
                     <div className="project-info">
-                        <div><h3>Studio Ghibli Films</h3></div>
+                        <div><h3>E-commerce Website</h3></div>
                         <div className="project-btn">
-                        <Button type="primary" onClick={showModal4}>
+                        <Button type="primary" onClick={showModal5}>
                             More Details
                         </Button>
-                        <Modal title='Studio Ghibli Films' visible={isModalVisible4} onOk={handleOk4} onCancel={handleCancel4}>
-                            <p>Description: A website to view and find information about Studio Ghibli Films.</p>
+                        <Modal title='E-Commerce Website' visible={isModalVisible5} onOk={handleOk5} onCancel={handleCancel5}>
+                            <p>Description: An E-Commerce website to browse and purchase products!</p>
                             <p>Frontend:</p>
                             <ul>
-                                <li>Retrieved data from the Ghibli API and implemented it into the application</li>
-                                <li>Gave each film an information page and matched it with their ID</li>
-                                <li>Made the application fully responsive to any screen size</li>
+                                <li>Retrieved data from REST API and implemented it into the application to display product information</li>
+                                <li>Managed state with Redux to eliminate side effects</li>
+                                <li>Pair Programmed with one other Software Engineer</li>
                             </ul>
-                            <p>No available website at the moment, <a target="_blank" rel="noopener noreferrer" href="https://github.com/cn8817/api-practice">Github</a></p>
+                            <p>Still under works!</p>
                         </Modal>
                         </div>
                     </div>

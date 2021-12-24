@@ -65,12 +65,8 @@ html{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
   background-color: #c6bbb9;
-}
-
-.left-h1{
-  padding-top: 0.5rem;
 }
 
 .link{
@@ -107,6 +103,7 @@ html{
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 0 4rem 0 4rem;
 }
 
 .project-h1{
@@ -157,11 +154,11 @@ html{
 }
 
 .about-container{
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 10rem 0 10rem;
+  margin: 0 10rem 0 10rem;
 }
 
 .about-intro{
@@ -175,28 +172,47 @@ html{
 }
 
 .about-learn{
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
-.special{
-  margin-top: 10rem;
-  padding-bottom: 2rem;
-}
 /*Contact*/
 .contact-container{
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 4rem;
 }
 
 .contact-h1, .contact-a, .contact-p{
   color: #ffffff !important;
 }
 
-.contact-extra{
-  margin-top:10rem;
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 3rem auto;
+  background-color: #ffffff;
+}
+
+#form-input-control-email{
+  width: 500px;
+}
+
+.contact-container{
+  margin-top: 15rem;
+}
+
+/*Thanks*/
+.thanks, .thanks-h3, .cats{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks{
+  padding-bottom: 3rem;
 }
 
 /*Responsive*/
