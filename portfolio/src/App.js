@@ -11,6 +11,7 @@ import Thanks from './components/Thanks';
 function App() {
   return (
     <div className='App'>
+      <Switch>
       <Route exact path='/' component={Landing}/>
         <div>
           <Nav/>
@@ -19,6 +20,7 @@ function App() {
           <Contact/>
           <Thanks/>
         </div>
+      </Switch>
     </div>
   );
 }
