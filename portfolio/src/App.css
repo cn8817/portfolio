@@ -150,29 +150,36 @@ html{
 
 .about-container, .about-h3, .about-h2, .about-h1, .special-h3{
   color:#ffffff;
-  text-align: center;
 }
 
 .about-container{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 0 10rem 0 10rem;
+  padding-top: 4rem;
 }
 
 .about-intro{
   padding-bottom: 5rem;
+  width: 60%;
 }
 
 .about-skills{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .about-learn{
   padding-top: 3rem;
+}
+
+.about-img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
 /*Contact*/
