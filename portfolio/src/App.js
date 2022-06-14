@@ -3,7 +3,7 @@ import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Landing from './components/Landing'
 import Nav from './components/Nav'
-import Projects from './components/Projects'
+import ProjectModals from './components/projects/ProjectModal';
 import About from './components/About'
 import Contact from './components/Contact'
 import Thanks from './components/Thanks';
@@ -16,7 +16,7 @@ function App() {
         <div>
           <Nav/>
           <About/>
-          <Projects/>
+          <ProjectModals/>
           <Contact/>
           <Thanks/>
         </div>

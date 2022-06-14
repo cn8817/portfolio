@@ -7,59 +7,6 @@ import Ghibli from '../Assets/ghibli.png'
 import ecom from '../Assets/ecom.png'
 
 export default function Projects() {
-    const [isModalVisible, setIsModalVisible] = useState(false);
-    const [isModalVisible2, setIsModalVisible2] = useState(false);
-    const [isModalVisible3, setIsModalVisible3] = useState(false);
-    const [isModalVisible4, setIsModalVisible4] = useState(false);
-    const [isModalVisible5, setIsModalVisible5] = useState(false);
-
-    const showModal = () => {
-        setIsModalVisible(true);
-    };
-    const showModal2 = () => {
-        setIsModalVisible2(true);
-    };
-    const showModal3 = () => {
-        setIsModalVisible3(true);
-    };
-    const showModal4 = () => {
-        setIsModalVisible4(true);
-    };
-    const showModal5 = () => {
-        setIsModalVisible5(true);
-    };
-
-    const handleOk = () => {
-        setIsModalVisible(false);
-    };
-    const handleOk2 = () => {
-        setIsModalVisible2(false);
-    };
-    const handleOk3 = () => {
-        setIsModalVisible3(false);
-    };
-    const handleOk4 = () => {
-        setIsModalVisible4(false);
-    };
-    const handleOk5 = () => {
-        setIsModalVisible5(false);
-    };
-
-    const handleCancel = () => {
-        setIsModalVisible(false);
-    };
-    const handleCancel2 = () => {
-        setIsModalVisible2(false);
-    };
-    const handleCancel3 = () => {
-        setIsModalVisible3(false);
-    };
-    const handleCancel4 = () => {
-        setIsModalVisible4(false);
-    };
-    const handleCancel5 = () => {
-        setIsModalVisible5(false);
-    };
 
     return(
         <div className="project-container" id='projects'>
